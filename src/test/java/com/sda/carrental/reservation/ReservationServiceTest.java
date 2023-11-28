@@ -15,7 +15,8 @@ import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-//test jednostkowy (unit test). we need to mock all dependencies in order to test only the code from ReservationService
+//test jednostkowy (unit test) - kawalek kodu z serwisu. we need to mock all dependencies
+// in order to test only the code from ReservationService
 @SpringBootTest
 class ReservationServiceTest {
 

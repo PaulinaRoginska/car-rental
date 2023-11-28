@@ -14,7 +14,8 @@ import org.springframework.security.web.SecurityFilterChain;
 @Profile("prod")
 public class ProdSecurityConfig {
 
-    //SecurityFilterChain, zachowanie naszego spring security
+    //SecurityFilterChain, zachowanie naszego spring security.
+    // filtruja requesty, jakie przychodza
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception {
         httpSecurity

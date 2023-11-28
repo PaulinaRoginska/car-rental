@@ -14,7 +14,7 @@ import org.springframework.security.provisioning.UserDetailsManager;
 @EnableWebSecurity
 public class BaseSecurityConfig {
 
-    //Create userDetailsManager to handle users
+    //Create userDetailsManager to handle users, jak bedziemy zarzadzac uzytkownikami. tu w pamieci
     @Bean
     public UserDetailsManager userDetailsManager() {
         return new InMemoryUserDetailsManager();

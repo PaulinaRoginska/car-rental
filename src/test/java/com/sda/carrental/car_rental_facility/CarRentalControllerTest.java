@@ -9,8 +9,8 @@ import org.springframework.test.web.reactive.server.WebTestClient;
 import java.util.List;
 
 
-// to jest test integracyjny
-//nie uzywamy tu mockow, apliikacja dziala i uzywamy WebTestClient,
+// to jest test integracyjny, sprawdza cala aplikacje, test end to end
+//nie uzywamy tu mockow, aplikacja dziala i uzywamy WebTestClient,
 // zeby wyslac request i uzyskac response
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ActiveProfiles("test")
