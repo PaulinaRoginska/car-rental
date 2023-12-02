@@ -12,7 +12,6 @@ import org.springframework.security.web.SecurityFilterChain;
 @Profile("test")
 public class TestSecurityConfig {
 
-    //SecurityFilterChain, zachowanie naszego spring security
     @Bean
     public SecurityFilterChain testFilterChain(HttpSecurity httpSecurity) throws Exception {
         httpSecurity
