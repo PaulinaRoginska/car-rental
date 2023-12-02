@@ -17,7 +17,6 @@ public class BranchesController {
         this.service = service;
     }
 
-    //    wyswietla wszystkie oddzialy
     @GetMapping
     public List<BranchesDTO> findAll() {
         return service.findAll()

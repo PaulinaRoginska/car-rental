@@ -18,8 +18,6 @@ public class CarRentalController {
         return service.save(carRentalModel);
     }
 
-    //    znajdujemy obiekt po id w wypozyczalni i jak nie bedzie, to zwracamy error code
-    //    obsługa błędów, metoda w service. sciaganie ze sciezki url(PathVariable)
     @GetMapping("/{id}")
     public CarRentalModel getById(@PathVariable Long id) {
         return service.getById(id);

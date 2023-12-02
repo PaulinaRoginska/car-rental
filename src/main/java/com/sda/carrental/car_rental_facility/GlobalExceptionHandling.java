@@ -22,7 +22,7 @@ public class GlobalExceptionHandling {
     public ProblemDetail handleRentAlreadyExistsForReservation(RentAlreadyExistsForReservation exception) {
         return ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST, exception.getMessage());
     }
- // this is related to @valid annotation
+
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ProblemDetail handleValidationException(MethodArgumentNotValidException exception) {
         List<FieldError> fieldErrors = exception.getBindingResult().getFieldErrors();
